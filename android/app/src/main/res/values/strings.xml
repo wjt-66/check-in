@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">周期打卡</string>
+    <string name="title_activity_main">周期打卡</string>
+    <string name="package_name">com.wjt.checkin</string>
+    <string name="custom_url_scheme">com.wjt.checkin</string>
+</resources>

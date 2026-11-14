@@ -1,0 +1,8 @@
+{
+  "appId": "com.wjt.checkin",
+  "appName": "周期打卡",
+  "webDir": "dist",
+  "android": {
+    "backgroundColor": "#f7f8fa"
+  }
+}

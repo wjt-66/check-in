@@ -10,8 +10,11 @@ import './main.css'
 
 dayjs.locale('zh-cn')
 
-// 注册 Service Worker，实现离线可用与资源缓存
-registerSW({ immediate: true })
+// 注册 Service Worker，实现离线可用与资源缓存（仅浏览器/PWA 环境需要；
+// Capacitor 原生壳内页面本身就是本地打包资源，无需 SW）
+if (!window.Capacitor) {
+  registerSW({ immediate: true })
+}
 
 const app = createApp(App)
 app.use(Vant)
