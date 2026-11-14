@@ -1,0 +1,63 @@
+/* 主题色覆盖 Vant 默认蓝 */
+:root {
+  --van-primary-color: #4f46e5;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f7f8fa;
+  color: #323233;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
+/* 页面通用容器 */
+.page-body {
+  padding: 12px;
+}
+
+/* 通用卡片 */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+/* 打卡任务行（首页 / 详情弹层共用样式由各自组件复用此布局） */
+.task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 2px;
+  font-size: 15px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.task .van-icon {
+  font-size: 20px;
+  color: #dcdee0;
+  flex-shrink: 0;
+}
+
+.task.done .van-icon {
+  color: #07c160;
+}
+
+.task.done .task-name {
+  color: #c8c9cc;
+  text-decoration: line-through;
+}

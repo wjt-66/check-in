@@ -1,0 +1,24 @@
+{
+  "name": "periodic-checkin",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "周期打卡备忘录（纯 H5 + PWA，数据本地存储）",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "icons": "node scripts/generate-icons.mjs"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "vant": "^4.9.4",
+    "vue": "^3.4.0",
+    "vue-router": "^4.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.0",
+    "vite": "^5.4.0",
+    "vite-plugin-pwa": "^0.20.5"
+  }
+}
